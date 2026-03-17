@@ -1,22 +1,3 @@
-"""
-GRR ANOVA Viewer
-================
-A Tkinter desktop application for performing Gauge Repeatability & Reproducibility (GRR)
-analysis using two-way ANOVA.
-
-Workflow:
-  1. Load a CSV with columns: operator, slot, part, tp1 [, tp2, ...]
-  2. Select a measurement column (tp column) from the dropdown.
-  3. Click "Run ANOVA" to fit two-way ANOVA models for all three factor pairs:
-       operator x part, operator x slot, slot x part
-  4. View interaction/main-effects plots and the ANOVA table / variance component breakdown.
-
-CSV format expected:
-  - operator : categorical identifier for the person who took the measurement
-  - slot     : categorical identifier for the measurement slot/position
-  - part     : categorical identifier for the part being measured
-  - tp1, tp2, ... : one or more numeric measurement (test-point) columns
-"""
 
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
